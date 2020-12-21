@@ -17,7 +17,13 @@ alias la='lsd -lAh'
 alias cdw='cd $HOME/Workspace'
 alias cdd='cd $HOME/Workspace/dosfarma/'
 
-# List docker
+# Docker
 alias dl='docker_list'
 alias dco='docker_connect'
 alias dp='docker_prune'
+alias dps='docker ps'
+alias dpa='docker ps -a'
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
+alias dcud='docker-compose up -d'
+alias dcd='docker-compose down'

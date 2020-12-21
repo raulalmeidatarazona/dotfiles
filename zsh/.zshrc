@@ -186,7 +186,19 @@ docker stop $(docker ps -a -q)
 yes | docker system prune -a
 }
 
+################################## System ###############################
+############system update ############
+function up(){
+sudo apt update;
+pkcon update
+}
+#######################################
 
-
-
+#############system clean##############
+function clean(){
+sudo apt-get autopurge;
+sudo apt-get autoremove;
+sudo apt-get autoclean
+}
+#######################################
 
