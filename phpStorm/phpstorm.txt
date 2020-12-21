@@ -1,0 +1,55 @@
+Rainbow Brackets
+symfony
+Key Promoter X
+-------------------------------------------------
+Configuration phpstorm raul almeida
+-------------------------------------------------
+alt + alt sostenido
+Menú de bordes:
+click en la esquina izquierda inferior
+-------------------------------------------------
+alt + fn + <-
+View/Apparence/Navigation Bar
+-------------------------------------------------
+Main menu:off
+-------------------------------------------------
+Tab placement | none : on
+-------------------------------------------------
+Show Breadcrums off 
+-------------------------------------------------
+Show whitespaces off
+-------------------------------------------------
+Code Style
+
+settings: Editor>General>Code Folding
+Show code folding outline: null
+-------------------------------------------------
+Code Style
+
+settings: Editor>Code Style>PHP
+Set from: PSR2
+Wrapping and Braces: Class field/constant groups
+Align properties in columns ok
+Align constants             ok
+-------------------------------------------------
+Font size and line spacing
+
+settings:Editor>Font
+Size: 16
+Line spacing: 1.5
+-------------------------------------------------
+settings: Editor>Inaly Hinst>PHP
+show parameter hinst:null
+-------------------------------------------------
+Keymap 
+select in pro: alt+s
+-------------------------------------------------
+Plugins:
+Rainbow Brackets
+Key Promoter X
+Symfony
+-------------------------------------------------
+ctrl+shift+a: memory settings 4096
+-------------------------------------------------
+ctrl+shift+a: registy distraction.free.mode
+-------------------------------------------------

@@ -1,0 +1,114 @@
+ 
+docker:
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+docker --version
+
+docker-compose:
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+docker-compose --version
+
+
+git
+
+toobox:
+wget https://www.jetbrains.com/es-es/toolbox-app/download/download-thanks.html
+phpstorm
+raul.almeida@dosfarma.com
+b,e3y4e(s.L:q'&
+
+datagrip
+raulalmeida.es@gmail.com
+6N4*ErAfyau@#:V
+chrome:
+https://www.google.com/intl/es/chrome/?brand=FKPE&gclid=EAIaIQobChMInt-Cl6Df7QIVo4BQBh0u1Q6_EAAYASAAEgKJQPD_BwE&gclsrc=aw.ds
+
+filezilla snap
+
+obs:
+sudo apt install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio
+
+vscode:
+https://code.visualstudio.com/docs/?dv=linux64_deb
+
+keepass
+https://keepassxc.org/
+
+postman: snap
+https://www.postman.com/downloads/
+
+okular
+*kio gdrive
+*kTouch
+*kmail
+*umbrello
+teams:
+https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/download-app
+raul.almeida@dosfarma.com
+dosfarma17
+
+
+mi terminal:
+
+sudo apt install zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+MesloLGS NF Regular.ttf :
+
+MesloLGS NF Italic.ttf :
+
+MesloLGS NF Bold Italic.ttf :
+
+MesloLGS NF Bold.ttf :
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+en el .zshrc:
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+#ENABLE_CORRECTION="true"
+//to this
+ENABLE_CORRECTION="true"
+
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+
+sudo apt-get install fzf
+
+sudo apt install bat = batcat
+lsd:
+ir a:
+https://github.com/Peltoche/lsd/releases
+descargar:
+lsd_0.19.0_amd64.deb
+en descargas
+sudo dpkg -i lsd_0.19.0_amd64.deb
+
