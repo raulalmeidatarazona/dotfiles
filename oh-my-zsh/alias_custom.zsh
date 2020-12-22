@@ -8,6 +8,10 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 
+# Xclip
+alias xcopy='xclip -selection clipboard'
+alias xpaste='xclip -selection clipboard -o'
+
 # List directory contents
 alias ls='lsd'
 alias l.='ls -lF -d  .*' ##solo que empicen por .##

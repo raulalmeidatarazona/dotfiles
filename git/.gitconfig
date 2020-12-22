@@ -1,3 +1,9 @@
 [user]
 	name  = Raúl Almeida
 	email = raulalmeida.es@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[commit]
+	template = ~/.gitmessage
