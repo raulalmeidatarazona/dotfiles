@@ -9,6 +9,8 @@
 # cd $brainstormr
 
 # List directory contents
+alias ls='lsd'
+alias l.='ls -lF -d  .*' ##solo que empicen por .##
 alias lsa='lsd -lah'
 alias l='lsd -lah'
 alias lat='lsd -lah --tree'
