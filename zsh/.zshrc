@@ -77,7 +77,7 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
-#source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -104,9 +104,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ############################## Custom Bindings ###################################
 
@@ -201,21 +198,6 @@ sudo apt-get autoremove;
 sudo apt-get autoclean
 }
 #######################################
-################################## Git ###############################
-#commit
-function gac {
-if (! git::is_in_repo); then
-  echo "Not in a git repo!"
-  exit 0
-fi
 
-git -c color.status=always status --short |
-  fzf --height 100% --ansi \
-    --preview '(git diff HEAD --color=always -- {-1} | sed 1,4d)' \
-    --preview-window right:65% |
-  cut -c4- |
-  sed 's/.* -> //' |
-  tr -d '\n' |
-  xcopy
-}
-############################################################################
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
